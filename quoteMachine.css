@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Jolly+Lodger');
+
+
+body {
+  background: #d6025a; /*browsers that don't support gradients*/
+  background: linear-gradient(#d6025a, #5504a0);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+
+}
+
+/*styles area where quote appears*/
+.quote {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 25%;
+  background-color: #f07339;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.button {
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: #d6025a;
+  font-size: 30px;
+  font-family: 'Jolly Lodger', sans-serif;
+}
+
+.button:hover {
+  border: none;
+}
+#words {
+  padding: 10px;
+  font-family: 'Jolly Lodger', sans-serif;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: 'Jolly Lodger', sans-serif;
+  text-align: center;
+  font-size: 60px;
+}
+
+.fa {
+  color: #000;
+}
+
+.fa:hover {
+  color: #8042f4;
+}

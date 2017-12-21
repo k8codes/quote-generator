@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--bootstrap-->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <link rel="stylesheet"
+    type="text/css"
+    href="quoteMachine.css">
+</head>
+<body>
+  <div class="container">
+    <!--navbar-->
+    <div class="row">
+      <div class="col-xs-5 col-md-5 col-lg-5"></div>
+      <div class="col-xs-2 col-md-2 col-lg-2 text-center btn" id="home"><a href="https://codepen.io/k8codes/full/BROZog/" target="_blank"><span class="fa fa-home fa-lg"></span></a></div>
+      <div class="col-xs-5 col-md-5 col-lg-5"></div>
+  <!--closing div for nav bar-->
+  </div>
+
+  <h1 class="text-center">Rick and Morty Quote Generator</h1>
+
+  <div class="row">
+    <div class="col-md-3 col-lg-3"></div>
+    <div class="col-md-6 col-lg-6 quote">
+      <!--where quote appears-->
+      <p class="words" id="words"></p>
+      <!--button to generate new quote-->
+      <div class="button btn btn-primary" id="getQuote">Get Schwifty</div>
+      <!--button to tweet out quote-->
+      <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large" target="_blank" id="tweet">
+        <div class="btn btn-primary button">Tweet it!</div>
+      </a>
+    </div>
+    <div class="col-md-3 col-lg-3"></div>
+  </div>
+</div>
+  <!--jQuery/bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="quoteMachine.js" type="text/javascript"></script>
+</body>
+</html>

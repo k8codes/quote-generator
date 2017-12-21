@@ -51,3 +51,10 @@ h1 {
 .fa:hover {
   color: #8042f4;
 }
+
+#foot {
+  color: #fffcfd;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 1em;
+  margin-bottom: 50px;
+}

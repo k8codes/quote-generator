@@ -4,23 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!--bootstrap-->
+    <!--font awesome stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--bootstrap-->
   <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
+    <!--my css-->
   <link rel="stylesheet"
     type="text/css"
     href="quoteMachine.css">
 </head>
 <body>
+<!--facebook sdk-->
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '315491528935284',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.11'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
   <div class="container">
     <!--navbar-->
     <div class="row">
-      <div class="col-xs-5 col-md-5 col-lg-5"></div>
-      <div class="col-xs-2 col-md-2 col-lg-2 text-center btn" id="home"><a href="https://codepen.io/k8codes/full/BROZog/" target="_blank"><span class="fa fa-home fa-lg"></span></a></div>
-      <div class="col-xs-5 col-md-5 col-lg-5"></div>
+      <div id="home"><span class="fa fa-home"></div>
   <!--closing div for nav bar-->
-  </div>
+    </div>
 
   <h1 class="text-center">Rick and Morty Quote Generator</h1>
 
@@ -35,6 +56,7 @@
       <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large" target="_blank" id="tweet">
         <div class="btn btn-primary button">Tweet it!</div>
       </a>
+      <div class="button btn btn-primary" id="fb">Share!</div>
     </div>
     <div class="col-md-3 col-lg-3"></div>
   </div>

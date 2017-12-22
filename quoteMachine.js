@@ -15,6 +15,14 @@ $(document).ready(function() {
     $('.twitter-share-button').attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(quotes[randomNum]));
   })
 
+  $('#fb').click(function() {
+    FB.ui({
+      method: 'share',
+      href: 'k8codes.github.io/quote-generator',
+      caption: quote[randomNum];
+    }, function(response){});
+  })
+
   randomize();
   generateQuote();
 })

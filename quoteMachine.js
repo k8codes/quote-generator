@@ -17,9 +17,9 @@ $(document).ready(function() {
 
   $('#fb').click(function() {
     FB.ui({
-      method: 'share',
-      href: 'k8codes.github.io/quote-generator',
-      caption: quote[randomNum];
+      method: 'feed',
+      link: 'k8codes.github.io/quote-generator',
+      caption: quotes[randomNum],
     }, function(response){});
   })
 

@@ -19,7 +19,7 @@ $(document).ready(function() {
     FB.ui({
       method: 'feed',
       link: 'k8codes.github.io/quote-generator',
-      caption: quotes[randomNum],
+      caption: encodeURIComponent(quotes[randomNum]),
     }, function(response){});
   })
 

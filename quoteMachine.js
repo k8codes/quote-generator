@@ -16,12 +16,9 @@ $(document).ready(function() {
   })
 
   $('#fb').click(function() {
-    FB.ui({
-      method: 'feed',
-      link: 'k8codes.github.io/quote-generator',
-      quote: quotes[randomNum],
-    }, function(response){});
-  })
+    window.open("https://www.facebook.com/sharer/sharer.php?u=https://k8codes.github.io/quote-generator&quote=" + encodeURIComponent(quotes[randomNum]), "pop", "width=600, height=400, scrollbars=no");
+});
+
 
   randomize();
   generateQuote();
